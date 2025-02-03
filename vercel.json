@@ -11,5 +11,11 @@
       "src": "/(.*)",
       "dest": "app.py"
     }
-  ]
+  ],
+  "build": {
+    "commands": [
+      "pip install --upgrade pip setuptools wheel",
+      "pip install --target . --upgrade -r requirements.txt"
+    ]
+  }
 }
